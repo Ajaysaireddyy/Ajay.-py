@@ -1,0 +1,29 @@
+Ques : 1
+print("If you are ok with delivery charges of 250.00 and 12% of GST on total")
+x = int(input("Book - Introduction to python programming : Rs 499.00 : ")) 
+y = int(input("Book - python libraries cookbook: Rs 855.00 : ")) 
+z = int(input("Book - Data science in python : Rs 645.00 : ")) 
+t1 = 499.00 * x;
+t2 = 855.00 * y;
+t3 = 645.00 * z;
+print("Introduction to python programming : {}".format(t1))
+print("Python libraries cookbook : {}".format(t2))
+print("Data science in python : {}".format(t3))
+nett=t1+t2+t3;
+print("Net Amount : {}".format(nett))
+gst_per=float(input("Enter the gst percent : ")) 
+gst_pri = ((gst_per * nett)/10)
+print("GST price : {}".format(gst_pri))
+print("Grand total including(GST) and delivery charges(250) : {}".format(gst_pri+250))
+
+Ques :2 
+
+n = str(input("Enter a string : "))
+
+uniqchars = " "
+
+for character in n:
+    if character not in uniqchars:
+        uniqchars += character.lower()
+
+print("The unique characters is: {}".format(uniqchars))
