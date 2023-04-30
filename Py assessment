@@ -19,11 +19,8 @@ print("Grand total including(GST) and delivery charges(250) : {}".format(gst_pri
 Ques :2 
 
 n = str(input("Enter a string : "))
-
 uniqchars = " "
-
 for character in n:
     if character not in uniqchars:
         uniqchars += character.lower()
-
 print("The unique characters is: {}".format(uniqchars))
